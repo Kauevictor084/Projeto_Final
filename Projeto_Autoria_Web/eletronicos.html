@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homelar.com - Eletrônicos</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+        }
+
+        header {
+            background-color: #0f20b4;
+            color: white;
+            padding: 1em 0;
+            text-align: center;
+        }
+
+        header a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        section {
+            padding: 4em 0;
+        }
+
+        .card {
+            border: none;
+            border-radius: 8px;
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card img {
+            border-radius: 8px 8px 0 0;
+            height: 350px;
+            object-fit: cover;
+        }
+
+        .card-body {
+            text-align: center;
+        }
+
+        .navbar-custom {
+            background-color: #0f20b4; 
+        }
+
+        .navbar-custom .navbar-brand,
+        .navbar-custom .navbar-nav .nav-link {
+            color: #ffffff; 
+        }
+
+        .navbar-custom .navbar-brand:hover,
+        .navbar-custom .navbar-nav .nav-link:hover {
+            color: #cccccc; 
+        }
+
+        .navbar-custom .form-control {
+            border-color: #ffffff; 
+            color: #ffffff; 
+        }
+
+        .navbar-custom .btn-login {
+            color: #ffffff; 
+            border-color: #ffffff; 
+        }
+
+        .navbar-custom .btn-login:hover {
+            color: #cccccc; 
+            background-color: #ffffff; 
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Produtos de Eletrônicos</h1>
+        <a href="Pagina_inicial.html">Voltar para a Página Inicial</a>
+    </header>
+    <nav class="navbar navbar-expand-lg navbar-custom">
+        <div class="container">
+            <a class="navbar-brand" href="#">Homelar</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Ofertas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Stories</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Sobre</a>
+                    </li>
+                </ul>
+                <form class="form-inline">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar" aria-label="Pesquisar">
+                    <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Pesquisar</button>
+                </form>
+                <button class="btn btn-login ml-2">Login</button>
+            </div>
+        </div>
+    </nav>
+    <div class="position-absolute" style="top: 10px; right: 10px;">
+        <a href="carrinho.html">
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="#ffffff"  class="bi bi-cart4" viewBox="0 0 16 16">
+                <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+            </svg>
+        </a>
+    </div>
+
+    <section class="container">
+        <div class="row">
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card">
+                    <img src="imagens/pocof5.png" class="card-img-top" alt="Produto 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Nome do Produto 1</h5>
+                        <p class="card-text">Descrição do Produto 1.</p>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card">
+                    <img src="imagens/pocof5.png" class="card-img-top" alt="Produto 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Nome do Produto 2</h5>
+                        <p class="card-text">Descrição do Produto 2.</p>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card">
+                    <img src="imagens/pocof5.png" class="card-img-top" alt="Produto 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Nome do Produto 2</h5>
+                        <p class="card-text">Descrição do Produto 2.</p>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card">
+                    <img src="imagens/pocof5.png" class="card-img-top" alt="Produto 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Nome do Produto 2</h5>
+                        <p class="card-text">Descrição do Produto 2.</p>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card">
+                    <img src="imagens/pocof5.png" class="card-img-top" alt="Produto 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Nome do Produto 2</h5>
+                        <p class="card-text">Descrição do Produto 2.</p>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card">
+                    <img src="imagens/pocof5.png" class="card-img-top" alt="Produto 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Nome do Produto 2</h5>
+                        <p class="card-text">Descrição do Produto 2.</p>
+                        
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2023 Home Lar - Eletrônicos</p>
+    </footer>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

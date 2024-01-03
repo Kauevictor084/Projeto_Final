@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Homelar.com - Produto</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+
+        .product-header {
+            background-color: #0f20b4;
+            color: #ffffff;
+            padding: 20px;
+            border-top-left-radius: 8px;
+            border-top-right-radius: 8px;
+            margin-top: -30px;
+            margin-bottom: 20px;
+        }
+        .product-header h1 {
+            margin-bottom: 0;
+        }
+        .product-header p {
+            font-size: 18px;
+        }
+        
+        .review-section {
+            margin-top: 50px;
+        }
+
+        .user-review {
+            border: 1px solid #eee;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .user-review h4 {
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        .user-review p {
+            margin-bottom: 5px;
+            color: #666;
+        }
+
+        .user-review .rating {
+            color: #fdd835; 
+        }
+
+        body {
+            background-color: blue;
+            padding-top: 20px;
+        }
+        .container {
+            background-color: #ffffff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            border-radius: 8px;
+            margin-top: 30px;
+        }
+        img {
+            max-width: 100%;
+            height: 340px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+        .product-header {
+            background-color: #0f20b4;
+            color: #ffffff;
+            padding: 20px;
+            border-top-left-radius: 8px;
+            border-top-right-radius: 8px;
+            margin-top: -30px;
+            margin-bottom: 20px;
+        }
+        .product-header h1 {
+            margin-bottom: 0;
+        }
+        .product-header p {
+            font-size: 18px;
+        }
+        .navbar-custom {
+            background-color: blue;
+            color: blue;
+        }
+
+        .navbar-custom .navbar-brand,
+        .navbar-custom .navbar-nav .nav-link {
+            color: blue;
+        }
+
+        .navbar-custom .navbar-brand:hover,
+        .navbar-custom .navbar-nav .nav-link:hover {
+            color: blue;
+        }
+
+        .navbar-custom .form-control {
+            border-color: blue;
+            color: blue;
+        }
+
+        .navbar-custom .btn-login {
+            color: blue;
+            border-color: blue;
+        }
+
+        .navbar-custom .btn-login:hover {
+            color: blue;
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    
+    <nav class="navbar navbar-expand-lg navbar-custom">
+        <div class="container">
+            <a class="navbar-brand" href="#">Homelar</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Ofertas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Stories</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Sobre</a>
+                    </li>
+                </ul>
+                <form class="form-inline">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar" aria-label="Pesquisar">
+                    <button class="btn btn-primary my-2 my-sm-0" type="submit">Pesquisar</button>
+                </form>
+                <button class="btn btn-login ml-2">Login</button>
+            </div>
+        </div>
+    </nav>
+<div class="container">
+    <div class="product-header text-center">
+        <h1>Poco F5</h1>
+        <p class="font-weight-bold">Preço: R$ 2500,00</p>
+    </div>
+    <div class="text-center">
+        <img src="imagens/pocof5.png" alt="Poco F5">
+        <p class="lead">O Poco F5 é um smartphone Android avançado e abrangente em todos os pontos de vista com algumas características excelentes. Tem uma grande tela de 6.67 polegadas com uma resolução de 2400x1080 pixels. As funcionalidades oferecidas pelo Poco F5 são muitas e inovadoras. Começando pelo 5G que permite a transferência de dados e excelente navegação na internet. Enfatizamos a excelente memória interna de 256 GB mas sem a possibilidade de expansão.
+            O Poco F5 é um produto com poucos concorrentes em termos de multimídia graças à câmera de 64 megapixels que permite ao Poco F5 tirar fotos fantásticas com uma resolução de 9238x6928 pixels e gravar vídeos em 4K a espantosa resolução de 3840x2160 pixels. Muito fino, 7.9 milímetros, o que torna o Poco F5 realmente interessante.</p>
+
+        <div class="form-group">
+            <label for="quantity">Quantidade:</label>
+            <input type="number" class="form-control" id="quantity" name="quantity" min="1" value="1">
+        </div>
+
+        <button class="btn btn-primary btn-block" onclick="addToCart()">Adicionar ao Carrinho</button>
+    </div>
+    <div class="position-absolute" style="top: 10px; right: 10px;">
+        <a href="carrinho.html">
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="#ffffff" class="bi bi-cart4" viewBox="0 0 16 16">
+                <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+            </svg>
+        </a>
+    </div>
+    <div class="review-section">
+        <h2 class="text-center mb-4">Avaliações dos Clientes</h2>
+
+        <div class="user-review">
+            <h4>Kauê</h4>
+            <p class="rating">&#9733; &#9733; &#9733; &#9733; &#9733;</p>
+            <p>O produto é perfeito, atendeu todas as minhas expectativas.</p>
+        </div>
+
+        <div class="user-review">
+            <h4>Maria</h4>
+            <p class="rating">&#9733; &#9733; &#9733; &#9733; &#9733;</p>
+            <p>Já esperava que fosse ótimo, recomendo a todos!</p>
+        </div>
+
+    </div>
+</div>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<script>
+    function addToCart() {
+        var quantity = document.getElementById("quantity").value;
+        var price = 2500;
+        var total = quantity * price;
+
+        var product = {
+            name: "Poco F5",
+            quantity: quantity,
+            price: price,
+            total: total.toFixed(2)
+        };
+
+        var cart = JSON.parse(localStorage.getItem('cart')) || [];
+        cart.push(product);
+        localStorage.setItem('cart', JSON.stringify(cart));
+
+        alert("Produto adicionado ao carrinho! Quantidade: " + quantity + ", Total: R$ " + total.toFixed(2));
+    }
+</script>
+</body>
+</html>

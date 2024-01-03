@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Homelar.com - Pagamento</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #f8f9fa;
+            padding-top: 20px;
+        }
+        .container {
+            background-color: #ffffff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            border-radius: 8px;
+            margin-top: 30px;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .navbar-custom {
+            background-color: #0f20b4; 
+        }
+
+        .navbar-custom .navbar-brand,
+        .navbar-custom .navbar-nav .nav-link {
+            color: #0f20b4;
+        }
+
+        .navbar-custom .navbar-brand:hover,
+        .navbar-custom .navbar-nav .nav-link:hover {
+            color: #0f20b4; 
+        }
+
+        .navbar-custom .form-control {
+            border-color: #0f20b4; 
+            color: #0f20b4; 
+        }
+
+        .navbar-custom .btn-login {
+            color: #0f20b4; 
+            border-color: #0f20b4;
+        }
+
+        .navbar-custom .btn-login:hover {
+            color: #0f20b4; 
+            background-color: #0f20b4; 
+        }
+
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-custom">
+        <div class="container">
+            <a class="navbar-brand" href="#">Homelar</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Ofertas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Stories</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Sobre</a>
+                    </li>
+                </ul>
+                <form class="form-inline">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar" aria-label="Pesquisar">
+                    <button class="btn btn-primary my-2 my-sm-0" type="submit">Pesquisar</button>
+                </form>
+                <button class="btn btn-login ml-2">Login</button>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <h2 class="mb-4">Página de Pagamento</h2>
+
+        <form>
+            <div class="form-group">
+                <label for="cardName">Nome no Cartão:</label>
+                <input type="text" class="form-control" id="cardName" placeholder="Insira o nome no cartão">
+            </div>
+            <div class="form-group">
+                <label for="cardNumber">Número do Cartão:</label>
+                <input type="text" class="form-control" id="cardNumber" placeholder="Insira o número do cartão">
+            </div>
+            <div class="form-row">
+                <div class="col">
+                    <label for="expiryMonth">Mês de Expiração:</label>
+                    <input type="text" class="form-control" id="expiryMonth" placeholder="MM">
+                </div>
+                <div class="col">
+                    <label for="expiryYear">Ano de Expiração:</label>
+                    <input type="text" class="form-control" id="expiryYear" placeholder="AAAA">
+                </div>
+                <div class="col">
+                    <label for="cvc">CVC:</label>
+                    <input type="text" class="form-control" id="cvc" placeholder="CVC">
+                </div>
+            </div>
+
+            
+            <div class="mt-4">
+                <h4>Produtos Escolhidos:</h4>
+                <ul>
+                    <li>PocoF5 - Preço: $2500,00</li>
+                    
+                </ul>
+            </div>
+
+            
+            <button type="submit" class="btn btn-primary mt-3">Pagar</button>
+        </form>
+    </div>
+
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
